@@ -23,7 +23,7 @@ test.beforeAll(async() => {
     Runner = new VisualGridRunner({ testConcurrency: 1 });
 
     const runnerName = 'Ultrafast Grid';
-    Batch = new BatchInfo({name: `Demo Saucelabs with ${runnerName}`});
+    Batch = new BatchInfo({name: `Demo Sauce with ${runnerName}`});
   
     Config = new Configuration();
   
@@ -38,14 +38,14 @@ test.afterAll(async() => {
     console.log('Visual test results', results);
 });
 
-test.describe('Demo Saucelabs', () => {
+test.describe('Demo Sauce', () => {
     let eyes: Eyes;
   
     test.beforeEach(async ({ page }) => {
       eyes = new Eyes(Runner, Config);
       await eyes.open(
         page,
-        'Demo Saucelabs',
+        'Demo Sauce',
         test.info().title,
         { width: 1200, height: 600 });
     });
