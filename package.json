@@ -1,0 +1,18 @@
+{
+  "name": "tau-webinar-locator-strategies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test tests/",
+    "test-vr": "npx playwright test tests-applitools/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-playwright": "1.17.5",
+    "@playwright/test": "^1.37.1",
+    "dotenv": "^16.3.1"
+  }
+}
